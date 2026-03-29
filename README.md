@@ -85,6 +85,9 @@ dmesg | tail -3
 
 | # | What it shows |
 |---|---|
+
+<img width="1100" height="248" alt="0" src="https://github.com/user-attachments/assets/8390e7c6-0420-4e0d-aa02-4df43e51472e" />
+
 <img width="892" height="132" alt="1 1" src="https://github.com/user-attachments/assets/cabcd951-61e0-40f2-a71b-c2c30d32fe9e" />
 
 | 1 | Two containers running under one supervisor |
@@ -109,13 +112,24 @@ dmesg | tail -3
 
 | 7 | `time` output for exp1 vs exp2 and cpuexp vs ioexp showing different completion times |
 exp1 vs exp2 based on priority:
+<img width="858" height="206" alt="7 1 1" src="https://github.com/user-attachments/assets/cd7b0a83-ace8-495e-873c-616c0ee60770" />
+
+<img width="954" height="135" alt="7 1 2" src="https://github.com/user-attachments/assets/d8640904-4aaa-4110-be5f-a5673c8df448" />
+
 <img width="1049" height="152" alt="7 1 3" src="https://github.com/user-attachments/assets/32cd47e4-bb36-49b0-b4e8-6261d1249e78" />
 
 cpuexp vs ioexp based on cpu bound and i/o bound process:
+<img width="1001" height="134" alt="7 2 1" src="https://github.com/user-attachments/assets/4066320b-c110-4a41-bfa1-3a62086d15da" />
+
+<img width="934" height="157" alt="7 2 2" src="https://github.com/user-attachments/assets/cd7e806c-8728-4507-8eda-ed860c84dde8" />
+
 <img width="934" height="157" alt="7 2 3" src="https://github.com/user-attachments/assets/8a21b273-e7a9-42ea-81c0-612e883b7b74" />
 
 | 8 | Supervisor "Clean exit. No zombies." message + `ps aux | grep defunct` empty |
 <img width="997" height="142" alt="8 1" src="https://github.com/user-attachments/assets/71de6d54-de9d-4bec-8396-9408a795f44b" />
+
+<img width="932" height="240" alt="8 2" src="https://github.com/user-attachments/assets/0e2d7f74-71dc-486f-b81d-8bc00a5f5bcb" />
+
 
 ---
 
