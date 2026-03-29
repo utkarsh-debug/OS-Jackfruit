@@ -83,18 +83,39 @@ dmesg | tail -3
 
 ## 3. Demo Screenshots
 
-*(Take these screenshots while running the steps above and paste them here)*
-
 | # | What it shows |
 |---|---|
+<img width="892" height="132" alt="1 1" src="https://github.com/user-attachments/assets/cabcd951-61e0-40f2-a71b-c2c30d32fe9e" />
+
 | 1 | Two containers running under one supervisor |
+<img width="901" height="159" alt="1 2" src="https://github.com/user-attachments/assets/664f980b-0cc9-4992-a9bc-64959d4c093f" />
+
+
 | 2 | `engine ps` output with both containers listed |
+<img width="875" height="123" alt="2" src="https://github.com/user-attachments/assets/b49ab3b5-2c4b-46b5-a9c1-cd3d96b3e199" />
+
 | 3 | Log file contents from `engine logs alpha` |
+<img width="1236" height="280" alt="3" src="https://github.com/user-attachments/assets/5b017bf9-9ead-43f5-bd9e-cf68fde0fbbb" />
+
+
 | 4 | `engine stop alpha` command and supervisor response |
+<img width="974" height="140" alt="4" src="https://github.com/user-attachments/assets/79999a65-5de2-42bf-9678-faad76fa9a06" />
+
 | 5 | `dmesg` showing SOFT LIMIT warning for memtest |
+<img width="1288" height="213" alt="5" src="https://github.com/user-attachments/assets/779d6d31-1c71-4106-9507-f3fd264e5c48" />
+
 | 6 | `dmesg` showing HARD LIMIT kill + `engine ps` showing hard_limit_killed |
-| 7 | `time` output for exp1 vs exp2 showing different completion times |
+<img width="994" height="175" alt="6" src="https://github.com/user-attachments/assets/c53499d0-da54-482b-924a-5eeb5e1407b5" />
+
+| 7 | `time` output for exp1 vs exp2 and cpuexp vs ioexp showing different completion times |
+exp1 vs exp2 based on priority:
+<img width="1049" height="152" alt="7 1 3" src="https://github.com/user-attachments/assets/32cd47e4-bb36-49b0-b4e8-6261d1249e78" />
+
+cpuexp vs ioexp based on cpu bound and i/o bound process:
+<img width="934" height="157" alt="7 2 3" src="https://github.com/user-attachments/assets/8a21b273-e7a9-42ea-81c0-612e883b7b74" />
+
 | 8 | Supervisor "Clean exit. No zombies." message + `ps aux | grep defunct` empty |
+<img width="997" height="142" alt="8 1" src="https://github.com/user-attachments/assets/71de6d54-de9d-4bec-8396-9408a795f44b" />
 
 ---
 
@@ -167,19 +188,19 @@ Linux uses the Completely Fair Scheduler (CFS). CFS maintains a virtual runtime 
 
 **Experiment 1 results:**
 
-| Container | Nice value | Workload | Real time |
-|-----------|-----------|----------|-----------|
-| exp1      | 0         | cpu_hog 30s | 0.098s |
-| exp2      | 10        | cpu_hog 30s | 5.131s |
+| Container | Nice value |   Workload  | Real time |
+|-----------|------------|-------------|-----------|
+| exp1      | 0          | cpu_hog 30s | 9.669s    |
+| exp2      | 10         | cpu_hog 30s | 16.058s   |
 
 exp2 took longer because CFS assigns nice=10 a weight of roughly 1/3 of nice=0's weight on a 2-core system. The higher-priority process accumulates vruntime more slowly so CFS always prefers it when both are runnable.
 
 **Experiment 2 results:**
 
-| Container | Type    | Workload        | Real time |
-|-----------|---------|-----------------|-----------|
-| cpuexp    | CPU-bound | cpu_hog 20s   | [A]s |
-| ioexp     | I/O-bound | io_pulse 40 iter | [B]s |
+| Container | Type       | Workload         | Real time |
+|-----------|------------|------------------|-----------|
+| cpuexp    | CPU-bound  | cpu_hog 20s      |  14.248s  |
+| ioexp     | I/O-bound  | io_pulse 40 iter |  11.447s  |
 
 The I/O-bound process (`io_pulse`) calls `usleep()` between iterations, voluntarily yielding the CPU. CFS resets its vruntime toward the minimum when it wakes up from sleep, giving it high scheduling priority for its brief CPU bursts. This explains why it completed at approximately the same speed as if running alone — it barely competed with `cpuexp` for CPU time.
 
@@ -214,16 +235,16 @@ Both containers run the same `cpu_hog 30` workload simultaneously. One has defau
 
 | Container | Nice | Measured real time |
 |-----------|------|--------------------|
-| exp1      | 0    | [fill in]s         |
-| exp2      | 10   | [fill in]s         |
+| exp1      | 0    | 9.669s             |
+| exp2      | 10   | 16.058s            |
 
 **Interpretation:** CFS weight for nice=0 is 1024; for nice=10 it is 110. On a single core this means exp1 gets approximately 1024/(1024+110) ≈ 90% of CPU time and exp2 gets ≈10%. exp2's real time should be roughly 9× exp1's if both run to completion. On a multi-core system the effect is less pronounced because each container may run on a separate core.
 
 ### Experiment 2 — CPU-bound vs I/O-bound
 
 | Container | Type      | Workload        | Measured real time |
-|-----------|-----------|-----------------|-------------------|
-| cpuexp    | CPU-bound | cpu_hog 20      | [fill in]s        |
-| ioexp     | I/O-bound | io_pulse 40 200 | [fill in]s        |
+|-----------|-----------|-----------------|--------------------|
+| cpuexp    | CPU-bound | cpu_hog 20      | 14.248s            |
+| ioexp     | I/O-bound | io_pulse 40 200 | 11.447s            |
 
 **Interpretation:** The I/O-bound workload completed in approximately the same time as if running alone because it spent most of its time sleeping in `usleep()`. CFS correctly identified it as a low-vruntime process and gave it immediate CPU access when it woke up. This demonstrates CFS's design goal: I/O-bound processes should not be penalised for yielding the CPU voluntarily.
