@@ -90,7 +90,8 @@ dmesg | tail -3
 
 <img width="1416" height="808" alt="WhatsApp Image 2026-04-21 at 11 58 16" src="https://github.com/user-attachments/assets/c6923d80-312e-45af-bf3e-25f739d3c3b5" />
 
-<img width="892" height="132" alt="1 1" src="https://github.com/user-attachments/assets/cabcd951-61e0-40f2-a71b-c2c30d32fe9e" />
+<img width="1600" height="366" alt="WhatsApp Image 2026-04-21 at 13 05 59" src="https://github.com/user-attachments/assets/9fbb7510-c914-403b-885b-c0052355065a" />
+
 
 | 1 | Two containers running under one supervisor |
 <img width="1472" height="493" alt="WhatsApp Image 2026-04-21 at 12 04 49" src="https://github.com/user-attachments/assets/46b7f17e-de6a-4c69-b7ff-5669291084f5" /><img width="1436" height="824" alt="WhatsApp Image 2026-04-21 at 12 05 56 (1)" src="https://github.com/user-attachments/assets/b87ae328-bb82-4444-8564-2ee8c19bc581" />
