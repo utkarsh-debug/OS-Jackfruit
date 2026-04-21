@@ -101,7 +101,8 @@ dmesg | tail -3
 <img width="1436" height="824" alt="WhatsApp Image 2026-04-21 at 12 05 56 (1)" src="https://github.com/user-attachments/assets/d643e6fe-060d-4f72-99c0-ed599b738d5c" />
 
 | 3 | Log file contents from `engine logs alpha` |
-<img width="1236" height="280" alt="3" src="https://github.com/user-attachments/assets/5b017bf9-9ead-43f5-bd9e-cf68fde0fbbb" />
+<img width="1441" height="812" alt="WhatsApp Image 2026-04-21 at 12 12 15" src="https://github.com/user-attachments/assets/ca3c0b8f-a695-46c2-a3db-f7a86f6be9ee" />
+
 
 
 | 4 | `engine stop alpha` command and supervisor response |
