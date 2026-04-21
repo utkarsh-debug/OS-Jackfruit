@@ -1,6 +1,5 @@
 
 
-
 # Multi-Container Runtime
 ## 1. Team Information
 
@@ -119,7 +118,8 @@ dmesg | tail -3
 exp1 vs exp2 based on priority:
 <img width="858" height="206" alt="7 1 1" src="https://github.com/user-attachments/assets/cd7b0a83-ace8-495e-873c-616c0ee60770" />
 
-<img width="954" height="135" alt="7 1 2" src="https://github.com/user-attachments/assets/d8640904-4aaa-4110-be5f-a5673c8df448" />
+<img width="1441" height="842" alt="WhatsApp Image 2026-04-21 at 12 18 11" src="https://github.com/user-attachments/assets/61df73ef-be30-41a6-8ffe-0911490abb82" />
+
 
 <img width="1049" height="152" alt="7 1 3" src="https://github.com/user-attachments/assets/32cd47e4-bb36-49b0-b4e8-6261d1249e78" />
 
