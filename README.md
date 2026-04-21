@@ -1,5 +1,4 @@
 
-
 # Multi-Container Runtime
 ## 1. Team Information
 
@@ -121,15 +120,20 @@ exp1 vs exp2 based on priority:
 
 <img width="1441" height="842" alt="WhatsApp Image 2026-04-21 at 12 18 11" src="https://github.com/user-attachments/assets/61df73ef-be30-41a6-8ffe-0911490abb82" />
 
+<img width="1431" height="823" alt="WhatsApp Image 2026-04-21 at 12 24 21" src="https://github.com/user-attachments/assets/1218dfdf-40f5-4b36-a323-f9992973124e" />
 
-<img width="1049" height="152" alt="7 1 3" src="https://github.com/user-attachments/assets/32cd47e4-bb36-49b0-b4e8-6261d1249e78" />
+
+
+<img width="1431" height="823" alt="WhatsApp Image 2026-04-21 at 12 24 21" src="https://github.com/user-attachments/assets/a9abbc31-a128-4fe6-9ff5-86a6abff4306" />
+
+<img width="1431" height="823" alt="WhatsApp Image 2026-04-21 at 12 24 21" src="https://github.com/user-attachments/assets/1218dfdf-40f5-4b36-a323-f9992973124e" />
+
+
 
 cpuexp vs ioexp based on cpu bound and i/o bound process:
 <img width="1001" height="134" alt="7 2 1" src="https://github.com/user-attachments/assets/4066320b-c110-4a41-bfa1-3a62086d15da" />
 
-<img width="934" height="157" alt="7 2 2" src="https://github.com/user-attachments/assets/cd7e806c-8728-4507-8eda-ed860c84dde8" />
 
-<img width="934" height="157" alt="7 2 3" src="https://github.com/user-attachments/assets/8a21b273-e7a9-42ea-81c0-612e883b7b74" />
 
 | 8 | Supervisor "Clean exit. No zombies." message + `ps aux | grep defunct` empty |
 <img width="997" height="142" alt="8 1" src="https://github.com/user-attachments/assets/71de6d54-de9d-4bec-8396-9408a795f44b" />
