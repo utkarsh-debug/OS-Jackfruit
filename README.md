@@ -1,4 +1,5 @@
 
+
 # Multi-Container Runtime
 ## 1. Team Information
 
@@ -133,7 +134,7 @@ cpuexp vs ioexp based on cpu bound and i/o bound process:
 | 8 | Supervisor "Clean exit. No zombies." message + `ps aux | grep defunct` empty |
 <img width="997" height="142" alt="8 1" src="https://github.com/user-attachments/assets/71de6d54-de9d-4bec-8396-9408a795f44b" />
 
-<img width="932" height="240" alt="8 2" src="https://github.com/user-attachments/assets/0e2d7f74-71dc-486f-b81d-8bc00a5f5bcb" />
+<img width="1434" height="823" alt="WhatsApp Image 2026-04-21 at 12 26 11 (2)" src="https://github.com/user-attachments/assets/e6da0962-6f43-468b-96ce-6c2db4b05c26" />
 
 
 ---
