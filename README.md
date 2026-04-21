@@ -123,13 +123,6 @@ exp1 vs exp2 based on priority:
 <img width="1431" height="823" alt="WhatsApp Image 2026-04-21 at 12 24 21" src="https://github.com/user-attachments/assets/1218dfdf-40f5-4b36-a323-f9992973124e" />
 
 
-
-<img width="1431" height="823" alt="WhatsApp Image 2026-04-21 at 12 24 21" src="https://github.com/user-attachments/assets/a9abbc31-a128-4fe6-9ff5-86a6abff4306" />
-
-<img width="1431" height="823" alt="WhatsApp Image 2026-04-21 at 12 24 21" src="https://github.com/user-attachments/assets/1218dfdf-40f5-4b36-a323-f9992973124e" />
-
-
-
 cpuexp vs ioexp based on cpu bound and i/o bound process:
 <img width="1001" height="134" alt="7 2 1" src="https://github.com/user-attachments/assets/4066320b-c110-4a41-bfa1-3a62086d15da" />
 
