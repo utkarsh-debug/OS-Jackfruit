@@ -1,5 +1,6 @@
 
 
+
 # Multi-Container Runtime
 ## 1. Team Information
 
@@ -106,7 +107,7 @@ dmesg | tail -3
 
 
 | 4 | `engine stop alpha` command and supervisor response |
-<img width="974" height="140" alt="4" src="https://github.com/user-attachments/assets/79999a65-5de2-42bf-9678-faad76fa9a06" />
+<img width="1426" height="807" alt="WhatsApp Image 2026-04-21 at 12 12 48" src="https://github.com/user-attachments/assets/c698c6d9-0325-40a4-9cf5-2814b8ccea53" />
 
 | 5 | `dmesg` showing SOFT LIMIT warning for memtest |
 <img width="1288" height="213" alt="5" src="https://github.com/user-attachments/assets/779d6d31-1c71-4106-9507-f3fd264e5c48" />
