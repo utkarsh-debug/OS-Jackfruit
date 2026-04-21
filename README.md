@@ -1,7 +1,6 @@
 
 
 
-
 # Multi-Container Runtime
 ## 1. Team Information
 
@@ -112,7 +111,8 @@ dmesg | tail -3
 <img width="1426" height="807" alt="WhatsApp Image 2026-04-21 at 12 12 48" src="https://github.com/user-attachments/assets/c698c6d9-0325-40a4-9cf5-2814b8ccea53" />
 
 | 5 | `dmesg` showing SOFT LIMIT warning for memtest |
-<img width="1288" height="213" alt="5" src="https://github.com/user-attachments/assets/779d6d31-1c71-4106-9507-f3fd264e5c48" />
+<img width="869" height="185" alt="WhatsApp Image 2026-04-21 at 13 24 06" src="https://github.com/user-attachments/assets/22b6d50b-e063-4e09-8384-3dcc491dce9f" />
+
 
 | 6 | `dmesg` showing HARD LIMIT kill + `engine ps` showing hard_limit_killed |
 <img width="871" height="166" alt="WhatsApp Image 2026-04-21 at 13 20 44" src="https://github.com/user-attachments/assets/88659494-14e4-48cd-b39e-44e2d4ac83c3" />
