@@ -1,3 +1,4 @@
+
 # Multi-Container Runtime
 ## 1. Team Information
 
@@ -86,7 +87,7 @@ dmesg | tail -3
 | # | What it shows |
 |---|---|
 
-<img width="1100" height="248" alt="0" src="https://github.com/user-attachments/assets/8390e7c6-0420-4e0d-aa02-4df43e51472e" />
+<img width="1416" height="808" alt="WhatsApp Image 2026-04-21 at 11 58 16" src="https://github.com/user-attachments/assets/c6923d80-312e-45af-bf3e-25f739d3c3b5" />
 
 <img width="892" height="132" alt="1 1" src="https://github.com/user-attachments/assets/cabcd951-61e0-40f2-a71b-c2c30d32fe9e" />
 
