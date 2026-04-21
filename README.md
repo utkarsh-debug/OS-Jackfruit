@@ -1,4 +1,5 @@
 
+
 # Multi-Container Runtime
 ## 1. Team Information
 
@@ -92,11 +93,12 @@ dmesg | tail -3
 <img width="892" height="132" alt="1 1" src="https://github.com/user-attachments/assets/cabcd951-61e0-40f2-a71b-c2c30d32fe9e" />
 
 | 1 | Two containers running under one supervisor |
-<img width="901" height="159" alt="1 2" src="https://github.com/user-attachments/assets/664f980b-0cc9-4992-a9bc-64959d4c093f" />
+<img width="1472" height="493" alt="WhatsApp Image 2026-04-21 at 12 04 49" src="https://github.com/user-attachments/assets/46b7f17e-de6a-4c69-b7ff-5669291084f5" /><img width="1436" height="824" alt="WhatsApp Image 2026-04-21 at 12 05 56 (1)" src="https://github.com/user-attachments/assets/b87ae328-bb82-4444-8564-2ee8c19bc581" />
+
 
 
 | 2 | `engine ps` output with both containers listed |
-<img width="875" height="123" alt="2" src="https://github.com/user-attachments/assets/b49ab3b5-2c4b-46b5-a9c1-cd3d96b3e199" />
+<img width="1436" height="824" alt="WhatsApp Image 2026-04-21 at 12 05 56 (1)" src="https://github.com/user-attachments/assets/d643e6fe-060d-4f72-99c0-ed599b738d5c" />
 
 | 3 | Log file contents from `engine logs alpha` |
 <img width="1236" height="280" alt="3" src="https://github.com/user-attachments/assets/5b017bf9-9ead-43f5-bd9e-cf68fde0fbbb" />
